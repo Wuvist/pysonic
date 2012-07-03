@@ -14,6 +14,5 @@ def setup(settings):
 		except KeyError:
 			pass    
 
-	import fulltext, obj
+	import fulltext
 	fulltext.setup()
-	obj.setup()

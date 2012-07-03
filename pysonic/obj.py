@@ -2,10 +2,8 @@
 
 from tornado import database
 import redis
-import inspect
 from field import *
 from utils import *
-import re
 import fulltext
 import config
 			
@@ -26,13 +24,6 @@ _dbs = {}
 
 class SonicObj(object):
 	__metaclass__ = MetaSonicObj
-
-	@property
-	def _url(self):
-		return _get_url(self)
-
-	def get_img(self, img, *args):
-		return _get_img(img, *args)
 
 	@classmethod
 	def _setup(cls):
