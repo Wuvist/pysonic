@@ -25,6 +25,8 @@ Dependencies
 Example
 =======
 
+Please check out source code's examples folder for full working code.
+
 Model Definition
 ----------------
 ```python
@@ -60,8 +62,7 @@ Build Table
 import pysonic
 pysonic.config.setup(dict(
 	default_db = ("localhost", "blog_db", "root"),
-	default_rs = {"host" :"localhost"},
-	xdb_path = "/var/xapian/blogs"
+	default_rs = {"host" :"localhost"}
 ))
 Author.build_table()
 ```
